@@ -1,0 +1,31 @@
+// カラー変数
+$color1: #fff;
+$color2: #182848;
+$color3: #191919;
+$color4: #4b6cb7;
+$color5: #b8614b;
+
+$bg-color1: linear-gradient(to right, #4b6cb7, #182848);;
+$bg-color2: #fff;
+$bg-color3: #182848;
+$bg-color4: #b8614b;
+$bg-color5: #f0f0f0;
+$bg-color6: #4b6cb7;
+$bg-color7: #191919;
+
+
+// ブレークポイント 
+$sp: 767px;
+$tab: 1199px;
+
+@mixin sp {
+    @media screen and (max-width: $sp) {
+        @content;
+    }
+}
+
+@mixin tab {
+    @media screen and (max-width: $tab) {
+        @content;
+    }
+}
